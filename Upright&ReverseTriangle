@@ -1,0 +1,43 @@
+// making "*" upright & reverse triangle using c after taking input from user
+#include <stdio.h>
+
+int main() {
+    int rows,j,i;
+    int input;{
+     printf("Enter '0' for Upright triangle \n,Enter '1'for Reversed Triangle \n");
+     printf("Enter:");
+        scanf("%d",&input);
+  /* now use switch case function*/
+   switch(input){
+       case 0:
+     printf("enter the rows:");
+         scanf("%d",&rows);
+   // code for Upright triangle 
+     for(i=1;i<=rows;i++){
+           for(j=1;j<=i;j++){
+           printf("*");
+            }
+     printf("\n");
+     }
+         
+     break;
+     case 1:
+     printf("enter the rows: ");
+       scanf("%d",&rows);
+   //  Code for Reverse triangle 
+     for(i=1;i<=rows;i++){
+      for(j=rows;j<=rows-i-1;j--){
+         printf("*");
+         }
+       printf("\n");
+     }
+     break;
+       
+           
+    }
+    // Write C code here
+    printf("How was it ??? 😉");
+
+    return 0;
+}
+}
